@@ -1,10 +1,10 @@
-resource "kubernetes_config_map" "master" {
+resource "kubernetes_config_map" "test" {
   metadata {
-    name      = "master"
-    namespace = "master"
+    name      = "test"
+    namespace = "test"
   }
 
   data = {
-    branch = "master"
+    branch = "test"
   }
 }
